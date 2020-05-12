@@ -157,6 +157,10 @@ class App extends Component {
   render() {
     return (
       <div className="App"> 
+        <div className="gameBox" onClick={this.startGame}>
+          <Snake snakeDots={this.state.snakeDots} />
+          <Food dot={this.state.food} />
+        </div>
         <button
           style={{width: "10rem", height: "5rem", marginTop: "2rem"}}
           onClick={this.startGame}
@@ -165,10 +169,6 @@ class App extends Component {
           >
           Start
         </button>
-        <div className="gameBox" onClick={this.startGame}>
-          <Snake snakeDots={this.state.snakeDots} />
-          <Food dot={this.state.food} />
-        </div>
       </div>
     )
   }
