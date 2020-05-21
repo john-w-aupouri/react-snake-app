@@ -162,11 +162,11 @@ class App extends Component {
           <Food dot={this.state.food} />
         </div>
         <button
+          className="btn btn-outline-success" 
           style={{width: "10rem", height: "5rem", marginTop: "2rem"}}
           onClick={this.startGame}
-          type="button" 
-          className="btn btn-outline-success"
-          >
+          type="button"  
+        >
           Start
         </button>
       </div>
